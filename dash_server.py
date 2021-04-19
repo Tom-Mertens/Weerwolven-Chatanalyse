@@ -22,7 +22,7 @@ df = functions.read_chat(chat)
 global dead
 
 dead = {'2021-04-16 00:00:00': ['Babet'],
-        '2021-04-18 12:00:00': ['Sven'],
+        '2021-04-18 12:00:00': ['Sven', 'Bob'],
         '2021-04-19 12:00:00': ['Tom Mertens', 'Jelle Lauf', 'Anke'],
         }
 
