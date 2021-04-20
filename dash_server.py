@@ -15,7 +15,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 # data management:
 global df
-chat = open('./chat_exports/05 - 1904.txt', mode="r", encoding='utf-8').readlines()
+chat = open('./chat_exports/06 - 2004.txt', mode="r", encoding='utf-8').readlines()
 df = functions.read_chat(chat)
 
 # filter for dead/alive
@@ -24,6 +24,7 @@ global dead
 dead = {'2021-04-16 00:00:00': ['Babet'],
         '2021-04-18 12:00:00': ['Sven', 'Bob'],
         '2021-04-19 12:00:00': ['Tom Mertens', 'Jelle Lauf', 'Anke'],
+        "2021-04-20 12:00:00": ['Remco', 'Sam']
         }
 
 # for dropdown menus:
