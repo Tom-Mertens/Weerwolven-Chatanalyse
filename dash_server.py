@@ -15,7 +15,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 # data management:
 global df
-chat = open('./chat_exports/06 - 2004.txt', mode="r", encoding='utf-8').readlines()
+chat = open('./chat_exports/07 - 3004.txt', mode="r", encoding='utf-8').readlines()
 df = functions.read_chat(chat)
 
 # filter for dead/alive
@@ -153,5 +153,7 @@ def generate_messages(start, end, who):
     return person_df.to_dict('records')
 
 
+#if __name__ == '__main__':
+#    app.run_server(debug=True)
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(host="0.0.0.0",debug=False)
